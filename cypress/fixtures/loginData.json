@@ -1,0 +1,11 @@
+{
+
+        "loginLogo": ".login_logo",
+        "username": "#user-name",
+        "password": "#password",
+        "loginButton": "#login-button",
+        "errorMessage": ".error-message-container.error"
+
+
+}
+    
