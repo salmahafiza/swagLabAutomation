@@ -10,8 +10,8 @@ class LoginPage {
     static visitLoginPage() {
         cy.visit('https://www.saucedemo.com/');
     }
-    static verifyAndAssertLoginLogo(){
-       // cy.get(loginData.loginLogo).should('be.visible');
+    static verifyAndAssertLoginLogo() {
+        // cy.get(loginData.loginLogo).should('be.visible');
         cy.get(loginData.loginLogo).contains('Swag Labs');
     }
     static enterUsername(username) {
@@ -33,9 +33,36 @@ class LoginPage {
     }
     static assertWithInvalidCredentials() {
         cy.get(loginData.errorMessage).should('be.visible');
+        cy.url().should('include', '/saucedemo.com');
         cy.get(loginData.errorMessage).contains('Epic sadface: Username and password do not match any user in this service');
     }
-
+    static clickOnMenuButton() {
+       cy.get(loginData.menuButton).should('be.visible');
+        cy.get(loginData.menuButton).click();
+        }
+    static clickOnAllItemsButton() {
+        cy.get(loginData.allItemsButton).should('be.visible');
+        cy.get(loginData.allItemsButton).click();
+    }
+    static clickOnAboutButton() {
+        cy.get(loginData.aboutButton).should('be.visible');
+        cy.get(loginData.aboutButton).click();
+    }
+    static clickOnLogoutButton() {
+        cy.get(loginData.logoutButton).should('be.visible');
+        cy.get(loginData.logoutButton).click();
+    }
+    static clickOnResetAppStateButton() {
+        cy.get(loginData.resetAppStateButton).should('be.visible');
+        cy.get(loginData.resetAppStateButton).click();
+    }
+    static clickOnCloseMenuButton() {
+        cy.get(loginData.closeMenuButton).should('be.visible');
+        cy.get(loginData.closeMenuButton).click();
+    }
+    static assertAboutPage(){
+        cy.url().should('include', 'https://saucelabs.com/');
+    }
 
 
 }

@@ -23,5 +23,13 @@ describe('Login Tests', () => {
         loginPage.assertWithInvalidCredentials();
 
     });
+    it('should not login with empty credentials', () => {
+        loginPage.enterUsername('');
+        loginPage.enterPassword('');
+        loginPage.clickLoginButton();
+        loginPage.assertWithInvalidCredentials();
+    });
+
+
 
 });

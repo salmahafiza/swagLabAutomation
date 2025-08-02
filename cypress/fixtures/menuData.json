@@ -1,0 +1,8 @@
+{
+    "menuButton": "#react-burger-menu-btn",
+    "allItemsButton": "#inventory_sidebar_link",
+    "aboutButton": "#about_sidebar_link",
+    "logoutButton": "#logout_sidebar_link",
+    "resetAppStateButton": "#reset_sidebar_link",
+    "closeMenuButton": "#react-burger-cross-btn"
+}
