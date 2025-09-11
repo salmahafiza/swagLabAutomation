@@ -4,5 +4,17 @@
     "aboutButton": "#about_sidebar_link",
     "logoutButton": "#logout_sidebar_link",
     "resetAppStateButton": "#reset_sidebar_link",
-    "closeMenuButton": "#react-burger-cross-btn"
+    "closeMenuButton": "#react-burger-cross-btn",
+    "burgerMenu": "#react-burger-menu-btn",
+    "cartButton": ".shopping_cart_link",
+    "cartBadge": ".shopping_cart_badge",
+    "sortDropdown": ".product_sort_container",
+    "inventoryItem": ".inventory_item",
+    "itemPrice": ".inventory_item_price",
+    "addToCartBackpack": "#add-to-cart-sauce-labs-backpack",
+    "removeBackpack": "#remove-sauce-labs-backpack",
+    "itemTitle": ".inventory_item_name",
+    "itemDescription": ".inventory_item_desc",
+    "addToCartBtn": ".btn.btn_primary.btn_small.btn_inventory",
+    "removeBtn": ".btn.btn_secondary.btn_small.btn_inventory"
 }

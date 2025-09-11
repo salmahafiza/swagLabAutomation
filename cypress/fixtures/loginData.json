@@ -4,8 +4,7 @@
         "username": "#user-name",
         "password": "#password",
         "loginButton": "#login-button",
-        "errorMessage": ".error-message-container.error"
-
+        "errormsg" : "[data-test='error']"
 
 
 }

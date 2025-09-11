@@ -24,10 +24,8 @@ describe('Login Tests', () => {
 
     });
     it('should not login with empty credentials', () => {
-        loginPage.enterUsername('');
-        loginPage.enterPassword('');
         loginPage.clickLoginButton();
-        loginPage.assertWithInvalidCredentials();
+        loginPage.assertEmptyLogin();
     });
 
 

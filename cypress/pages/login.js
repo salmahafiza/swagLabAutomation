@@ -32,14 +32,14 @@ class LoginPage {
         cy.url().should('include', '/inventory.html');
     }
     static assertWithInvalidCredentials() {
-        cy.get(loginData.errorMessage).should('be.visible');
-        cy.url().should('include', '/saucedemo.com');
-        cy.get(loginData.errorMessage).contains('Epic sadface: Username and password do not match any user in this service');
+        cy.get(loginData.errormsg).should('be.visible');
+        cy.url().should('include', 'saucedemo.com');
+        cy.get(loginData.errormsg).contains('Epic sadface: Username and password do not match any user in this service');
     }
     static clickOnMenuButton() {
-       cy.get(loginData.menuButton).should('be.visible');
+        cy.get(loginData.menuButton).should('be.visible');
         cy.get(loginData.menuButton).click();
-        }
+    }
     static clickOnAllItemsButton() {
         cy.get(loginData.allItemsButton).should('be.visible');
         cy.get(loginData.allItemsButton).click();
@@ -60,10 +60,15 @@ class LoginPage {
         cy.get(loginData.closeMenuButton).should('be.visible');
         cy.get(loginData.closeMenuButton).click();
     }
-    static assertAboutPage(){
+    static assertAboutPage() {
         cy.url().should('include', 'https://saucelabs.com/');
     }
-
-
+    static assertEmptyLogin() {
+        cy.get(loginData.errormsg).should('be.visible');
+        cy.url().should('include', 'saucedemo.com');
+        cy.get(loginData.errormsg).contains('Epic sadface: Username is required');
+    }
 }
+
+
 export default LoginPage;
