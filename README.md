@@ -1,54 +1,105 @@
-# SwagLab Automation (Cypress)
+📦 swaglab-automation
+ ┣ 📂 cypress
+ ┃ ┣ 📂 e2e
+ ┃ ┃ ┣ 📜 login.spec.js
+ ┃ ┃ ┣ 📜 PLP.spec.js
+ ┃ ┃ ┣ 📜 PDP.spec.js
+ ┃ ┃ ┣ 📜 Checkout.spec.js
+ ┃ ┣ 📂 fixtures
+ ┃ ┃ ┣ 📜 loginData.json
+ ┃ ┃ ┣ 📜 plpData.json
+ ┃ ┃ ┣ 📜 pdpData.json
+ ┃ ┃ ┣ 📜 checkoutData.json
+ ┃ ┣ 📂 pages
+ ┃ ┃ ┣ 📜 login.js
+ ┃ ┃ ┣ 📜 PLPPage.js
+ ┃ ┃ ┣ 📜 PDPPage.js
+ ┃ ┃ ┣ 📜 CheckoutPage.js
+ ┣ 📜 README.md
+ ┣ 📜 package.json
 
-This repository contains manual test design and automated end-to-end tests for the [Swag Labs Demo App](https://www.saucedemo.com/).  
-It demonstrates my QA skills in **manual testing, test case design, and automation using Cypress**, along with CI/CD setup in GitHub Actions.
+✅ Features Covered
+🔹 Login
 
----
+Valid login
 
-## 📌 Features
-- Manual test cases (positive, negative, and edge scenarios)
-- Bug reports with steps, screenshots, and severity levels
-- Automated Cypress tests for login, product filtering, cart, and checkout flows
-- Cypress dashboard & HTML test reports
-- GitHub Actions integration for continuous testing
+Invalid login
 
----
+Empty credentials
 
-## 🛠️ Tools & Technologies
-- Cypress (JavaScript)
-- Node.js, npm
-- GitHub Actions (CI/CD)
-- Chrome / Cross-browser testing
+Logout flow
 
----
+🔹 Product Listing Page (PLP)
 
-## 🚀 How to Run Tests
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/salmahafiza/swagLabAutomation.git
+Verify product list
+
+Sorting (A–Z, Z–A, Low–High, High–Low)
+
+Add/Remove from cart
+
+Cart badge updates
+
+Navigate to PDP
+
+🔹 Product Detail Page (PDP)
+
+Product details (name, desc, price, image)
+
+Add/Remove from cart
+
+Back to PLP
+
+Multiple PDP navigation
+
+🔹 Checkout
+
+User information validation (missing fields)
+
+Cart item persistence
+
+Cancel checkout
+
+Successful order placement
+
+Order confirmation & cart clearance
+
+⚙️ Installation & Setup
+
+Clone this repo:
+
+git clone https://github.com/<your-username>/swaglab-automation.git
+cd swaglab-automation
+
+
 Install dependencies:
 
 npm install
 
 
-Run Cypress tests in headless mode:
-
-npx cypress run
-
-
-Open Cypress Test Runner (interactive mode):
+Run Cypress tests (headed mode):
 
 npx cypress open
 
 
-View HTML or dashboard reports in the cypress/reports folder.
+Run Cypress tests (headless mode):
 
-📂 Project Artifacts
+npx cypress run
 
-Manual Test Cases → manual-tests/ (login, cart, checkout, edge cases)
+📊 Test Artifacts
 
-Bug Reports → bug-reports/ (steps + screenshots)
+Manual Test Cases → swaglabs_full_test_cases.xlsx
 
-Automation Scripts → cypress/e2e/ (Cypress test files)
+Bug Report → swaglabs_bug_report_full.xlsx
 
-Reports → Cypress HTML reports
+🛠 Tools & Tech
+
+Cypress
+
+JavaScript (ES6)
+
+Page Object Model (POM)
+
+GitHub Actions (CI/CD) (optional integration)
+
+👩‍💻 Author
+Salma Hafiza
