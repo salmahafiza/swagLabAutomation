@@ -1,0 +1,9 @@
+{
+  "productTitle": ".inventory_item_name",
+  "productImage": ".inventory_item_img",
+  "addToCartButton": "[data-test^='add-to-cart']",
+  "removeButton": "[data-test^='remove']",
+  "cartBadge": ".shopping_cart_badge",
+  "sortDropdown": "[data-test='product_sort_container']",
+  "menuButton": "#react-burger-menu-btn"
+}
