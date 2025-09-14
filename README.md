@@ -1,22 +1,3 @@
-📦 swaglab-automation
- ┣ 📂 cypress
- ┃ ┣ 📂 e2e
- ┃ ┃ ┣ 📜 login.spec.js
- ┃ ┃ ┣ 📜 PLP.spec.js
- ┃ ┃ ┣ 📜 PDP.spec.js
- ┃ ┃ ┣ 📜 Checkout.spec.js
- ┃ ┣ 📂 fixtures
- ┃ ┃ ┣ 📜 loginData.json
- ┃ ┃ ┣ 📜 plpData.json
- ┃ ┃ ┣ 📜 pdpData.json
- ┃ ┃ ┣ 📜 checkoutData.json
- ┃ ┣ 📂 pages
- ┃ ┃ ┣ 📜 login.js
- ┃ ┃ ┣ 📜 PLPPage.js
- ┃ ┃ ┣ 📜 PDPPage.js
- ┃ ┃ ┣ 📜 CheckoutPage.js
- ┣ 📜 README.md
- ┣ 📜 package.json
 
 ✅ Features Covered
 🔹 Login
